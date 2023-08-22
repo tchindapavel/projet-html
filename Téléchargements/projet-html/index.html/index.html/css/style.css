@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
 
 p{
@@ -24,12 +25,20 @@ a {
 
 
 
+.social {
+    margin: 40px;
+}
+
+
+
+
+
 /*  */
 
 .itemname {
     display: flex;
     flex-flow: row nowrap;
-   height: 10px;
+    height: 10px;
     background-color:white;
     color:#111;
 }
@@ -64,8 +73,11 @@ width: 20px;
     color: #111;
 }
 
-.purchase {
+.purchase img {
     height: 50px;
+    float: right;
+    
+    
 }
 
 
@@ -80,7 +92,7 @@ width: 20px;
 /* vp + header */
 
 .vp-container{
-    /* min-height: 100vh; */
+    height: 5px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -102,6 +114,7 @@ header {
 }
 
 header ul {
+    
     display: flex;
     flex-flow: row nowrap;
     list-style: none;
@@ -133,18 +146,17 @@ header a {
 
 
 .contenue{
-    height: 500px;
+    height: 400px;
     background-color: #b5caee;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-   
-
+    /* width: auto; */
 }
 .contenue img{
     font-size: 2rem;
-    margin-left:100px ;
+    margin-left:50px ; 
 }
 .contenue div{
     margin-bottom: 60px;
@@ -157,6 +169,39 @@ header a {
 .contenue div p{
     text-align: justify;
 }
+
+ .animation1{
+    display: flex;
+    animation-duration:5s;
+    animation-name: pavel;
+    animation-iteration-count:infinite;
+} 
+
+@keyframes  pavel {
+    from {
+        transform: translateX(600px); 
+    }
+    
+    to{
+        
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -204,31 +249,13 @@ button a{
     color: white;
 
 }
-/* 
-.contenue{
-    margin: 50px;
-    animation-name: pavel;
-    animation-duration:3s;
-    animation-iteration-count: infinite;
-
-}
-
-@keyframes  pavel {
-    0% {
-        transform: translateX(0)
-
-    }
-    
-    100% {
-        transform: translateX()
-    } */
-}
+ 
 
 
 
 .arrow img {
    height:35px;
-   justify-content:start;
+   
   
   
 }
@@ -340,7 +367,7 @@ color: #fff;
 
 .vp1content{
     background:white;
-    height: 650px;
+    height: 590px;
     border: 1px solid red;
     border: none;
 }
@@ -429,7 +456,7 @@ color: #fff;
 
 .vp3content {
     display: flex;
-    background: #fff;
+    /* background: #fff; */
     border: 1px solid green;
     /* height: 700px; */
 } 
